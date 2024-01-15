@@ -9,7 +9,7 @@ async function bootstrap() {
   app.enableCors({
     allowedHeaders: ['Content-Type', 'Authorization', '*'],
     origin: [
-      'https://the-stack-w38e-62b707jfd-noahbuilds.vercel.app',
+      'https://the-stack-w38e.vercel.app/',
       'http://localhost:4200',
       'http://localhost:3000',
       'http://localhost:9000',
