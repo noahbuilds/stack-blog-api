@@ -16,8 +16,9 @@ async function bootstrap() {
       'localhost:3000',
       'localhost:4200',
       '192.168.0.152',
+      '*',
     ],
-    credentials: true,
+    credentials: false,
     methods: ['POST', 'PUT', 'GET', 'OPTIONS', 'PATCH', 'DELETE'],
   });
   const options = new DocumentBuilder()
