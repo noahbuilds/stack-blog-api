@@ -8,18 +8,9 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   app.enableCors({
     allowedHeaders: ['Content-Type', 'Authorization', '*'],
-    origin: [
-      'https://the-stack-w38e.vercel.app/',
-      'http://localhost:4200',
-      'http://localhost:3000',
-      'http://localhost:9000',
-      'localhost:3000',
-      'localhost:4200',
-      '192.168.0.152',
-      '*',
-    ],
+    origin: '*',
     credentials: false,
-    methods: ['POST', 'PUT', 'GET', 'OPTIONS', 'PATCH', 'DELETE'],
+    methods: '*',
   });
   const options = new DocumentBuilder()
     .setTitle('STACK BLOG API')
